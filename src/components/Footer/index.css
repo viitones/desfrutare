@@ -1,0 +1,21 @@
+footer {
+  /* margin-top: 3rem; */
+  background-color: #0F172A;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+footer svg {
+  color: white;
+}

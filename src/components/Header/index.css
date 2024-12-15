@@ -1,0 +1,119 @@
+header {
+  background-color: #0F172A;
+  width: 100%;
+  z-index: 1;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: fit-content;
+  margin-inline: auto;
+  padding-block: 1.5rem;
+}
+
+.img-container {
+  max-width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #F1F5F9;
+}
+
+.btn-ico {
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  height: fit-content;
+
+  cursor: pointer;
+  background-color: #f1f5f9ea;
+  display: none;
+  opacity: 0.9;
+}
+
+.btn-ico img svg {
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  background-color: #0F172A;
+  z-index: 9;
+  position: fixed;
+  width: 0%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.overlay .conteudo {
+  top: 25%;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.overlay a {
+  font-size: 2rem;
+  transition: 0.3s;
+  padding: 8px;
+  display: block;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f186;
+}
+
+.overlay .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 4rem;
+}
+
+@media (max-width: 700px) { 
+  header > div {
+    position: relative;
+    width: auto;
+  }
+
+
+  .btn-ico {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+  }
+
+}
+@media (max-width: 500px) { 
+  header nav {
+    display: none;
+  }
+  
+
+  .overlay a {
+    font-size: 1.5rem;
+  }
+  .overlay, .close-btn {
+    font-size: 3.5rem;
+    top: 15px;
+    right: 35px;
+  }
+}

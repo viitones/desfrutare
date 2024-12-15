@@ -1,8 +1,11 @@
-import './App.css'
+import { InitialPage } from './pages/Initial-page'
 
 export function App() {
 
   return (
-    <h1>asdas</h1>
+    <>
+      <InitialPage />
+
+    </>
   )
 }
