@@ -144,6 +144,14 @@
     text-align: center;
   }
 
+  .cardInit div {
+    align-items: center;
+  }
+
+  .cardInit a {
+    margin: auto;
+  }
+
   .mainInit h2 {
     font-size: 3.5rem;
     max-width: fit-content;
