@@ -19,7 +19,7 @@ export function Header() {
           <div>
             <a href="#modalidade">Modalidades</a>
           </div>
-          <Link to="./transparencia.html">Transparência</Link>
+          <Link to="./transparence">Transparência</Link>
           <a href="#contato">Contato</a>
         </nav>
 

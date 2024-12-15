@@ -5,6 +5,7 @@
 }
 
 .contato > h2 {
+  margin-top: 3rem;
   margin-inline: auto;
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -77,18 +78,18 @@ form div{
   grid-area: texto;
 }
 
-input {
+.inputC {
   background-color: rgba(0, 0, 0, 0.089);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
-input::placeholder {
+.inputC::placeholder {
   color: black;
 }
 
-form textarea {
+.formC textarea {
   resize: none;
   background-color: rgba(0, 0, 0, 0.089);
   border: none;
@@ -97,7 +98,7 @@ form textarea {
   border-radius: 8px;
 }
 
-form button {
+.formC button {
   margin-top: 2rem;
   background-color: #5372F0;
   color: white;
@@ -107,7 +108,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.formC button:hover {
   opacity: .8;
 }
 

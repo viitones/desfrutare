@@ -22,10 +22,10 @@ export function InitialPage() {
         </div>
       </section>
 
-      <main id="modalidade" className="container">
+      <main id="modalidade" className="container mainInit">
         <h2>Modalidades</h2>
-        <div className="cards">
-          <div className="card">
+        <div className="cardsInit">
+          <div className="cardInit">
             <img src={judo} alt="" />
             <div>
               <p>Judô</p>
@@ -40,7 +40,7 @@ export function InitialPage() {
             </div>
             
           </div>
-          <div className="card right">
+          <div className="cardInit right">
             <div>
               <p>Vôlei</p>
               <p>O voleibol é um esporte coletivo praticado entre duas equipes de seis jogadores, que se enfrentam em uma quadra dividida por uma rede. Foi criado em 1895 por William G. Morgan, nos Estados Unidos, com o objetivo de ser uma alternativa menos violenta ao basquete, mas igualmente dinâmica.

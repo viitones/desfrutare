@@ -30,16 +30,16 @@ export function Contact() {
 
         <div className="mensagem">
           <h2>Nos mande uma mensagem!</h2>
-          <form id="form" action="https://api.web3forms.com/submit" method="POST">
+          <form id="form" action="https://api.web3forms.com/submit" className='formC' method="POST">
             <div>
-              <input type="text" placeholder="Nome" id="name" name="name" required />
-              <input type="text" placeholder="Sobrenome" id="sobrenome" name="sobrenome" required />
-              <input type="email" placeholder="Email" id="email" name="email" required />
-              <input type="number" placeholder="Telefone" id="tel" name="tel" required />
+              <input className='inputC' type="text" placeholder="Nome" id="name" name="name" required />
+              <input className='inputC' type="text" placeholder="Sobrenome" id="sobrenome" name="sobrenome" required />
+              <input className='inputC' type="email" placeholder="Email" id="email" name="email" required />
+              <input className='inputC' type="number" placeholder="Telefone" id="tel" name="tel" required />
               <textarea name="mensagem" id="mensagem" placeholder="Digte sua mensagem" />
             </div>
             <button id="finish">Enviar</button>
-            <input type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19" />
+            <input className='inputC' type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19" />
           </form>
         </div>
       </div>

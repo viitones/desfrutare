@@ -1,14 +1,11 @@
-import { InitialPage } from './pages/Initial-page'
-import { Judo } from './pages/judo'
-import { Transparence } from './pages/transparence'
+import { RouterProvider } from 'react-router-dom'
+import { routes } from './routes'
 
 export function App() {
 
   return (
     <>
-      {/* <InitialPage /> */}
-      {/* <Transparence /> */}
-      <Judo />
+      <RouterProvider router={routes} />
     </>
   )
 }
