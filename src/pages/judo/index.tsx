@@ -2,15 +2,17 @@ import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
 import './index.css'
 
+import judo from '../../assets/judo/Judo.png'
+
 export function Judo() {
   return (
     <>
       <Header />
 
-      <section className="container">
-        <h1>JUDÔ</h1>
+      <section className="container containerJ">
+        <h1 className='h1J'>JUDÔ</h1>
         <div className="img-cont">
-          <img src="./assets/judo/Judô.png" alt="Judô" />
+          <img src={judo} alt="Judô" />
           <p>O judô é uma arte marcial que evoluiu para um esporte de combate, idealizado por Jigoro Kano em 1882. Sua essência está em promover o fortalecimento harmônico do corpo, da mente e do espírito, além de ensinar técnicas eficazes de autodefesa. 
               <br /><br />
             A grande aceitação mundial do judô deve-se à visão de Kano, que integrou elementos essenciais dos principais estilos e escolas de jujitsu — uma arte marcial praticada pelos "bushi" (samurais) durante o período Kamakura (1185-1333) — a outras tradições de combate do Oriente, criando um sistema coeso e acessível.
@@ -24,21 +26,21 @@ export function Judo() {
             Jigoro Kano, seu fundador, descreveu o judô como "a arte de utilizar ao máximo a força física e espiritual". Segundo ele, cada vitória representa não apenas um triunfo físico, mas também um avanço no fortalecimento espiritual e no desenvolvimento pessoal. </p>
         </div>
       
-        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <form className='formJ' id="form" action="https://api.web3forms.com/submit" method="POST">
           <div>
-            <input type="text" placeholder="Nome" id="name" name="name" required />
+            <input className='inputJ' type="text" placeholder="Nome" id="name" name="name" required />
 
-            <input type="email" placeholder="Email" id="email" name="email" required />
-            <input type="number" placeholder="Telefone" id="tel" name="tel" required />
+            <input className='inputJ' type="email" placeholder="Email" id="email" name="email" required />
+            <input className='inputJ' type="number" placeholder="Telefone" id="tel" name="tel" required />
 
-            <input type="text" placeholder="Bairro" id="bairro" name="bairro" required />
-            <input type="text" placeholder="Cidade" id="cidade" name="cidade" required />
-            <input type="text" placeholder="Modalidade desejada" id="modalidade" name="modalidade" required />
+            <input className='inputJ' type="text" placeholder="Bairro" id="bairro" name="bairro" required />
+            <input className='inputJ' type="text" placeholder="Cidade" id="cidade" name="cidade" required />
+            <input className='inputJ' type="text" placeholder="Modalidade desejada" id="modalidade" name="modalidade" required />
 
             <textarea name="mensagem" id="mensagem" placeholder="Digte sua mensagem" />
           </div>
           <button id="finish">Enviar</button>
-          <input type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19" />
+          <input className='inputJ' type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19" />
         </form>
       </section>
       <Footer />

@@ -15,7 +15,7 @@ export function Header() {
           <img src={logo} alt="infinity institute" />
         </div>
         <nav>
-          <a href="/index.html">Início</a>
+          <Link to="/">Início</Link>
           <div>
             <a href="#modalidade">Modalidades</a>
           </div>
@@ -29,9 +29,9 @@ export function Header() {
           </a>
 
           <div className="conteudo">
-            <a href="/index.html">Início</a>
+            <Link to="/">Início</Link>
             <a className="cls" href="#modalidade">Modalidades</a>
-            <a href="./transparencia.html">Transparência</a>
+            <Link to="/transparence">Transparência</Link>
             <a className="cls" href="#contato">Contato</a>
           </div>
         </div>

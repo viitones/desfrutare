@@ -5,9 +5,11 @@ import './index.css';
 
 import judo from '../../assets/Judô.png';
 import volei from '../../assets/volei.png';
+
 import { Contact } from "../../components/Contact";
 import { Localization } from "../../components/Localization";
 import { Footer } from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export function InitialPage() {
 
@@ -34,9 +36,9 @@ export function InitialPage() {
                 <br />
               O Judô teve uma grande aceitação em todo o mundo, pois Kano conseguiu reunir a essência dos principais estilos e escolas de jujitsu, arte marcial praticada pelos "bushi", ou cavaleiros durante o período Kamakura (1185-1333), a outras artes de luta praticadas no Oriente...</p>
 
-              <a href="./judo.html">
+              <Link to="/judo">
                 <span>Saiba mais</span>
-                </a>
+                </Link>
             </div>
             
           </div>
@@ -47,7 +49,7 @@ export function InitialPage() {
                 <br />
                 <br />
                 O voleibol se popularizou rapidamente, espalhando-se por diversos países ao redor do mundo. Com o tempo, o esporte foi adaptado e passou a ser jogado em diferentes modalidades, como o vôlei...</p>
-                <a href="./volei.html">Saiba mais</a>
+                <Link to="/volei">Saiba mais</Link>
             </div>
             <img src={volei} alt="" />
           </div>

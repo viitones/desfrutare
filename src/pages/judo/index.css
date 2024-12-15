@@ -1,4 +1,4 @@
-h1 {
+.h1J {
   padding-block: 3rem;
   font-size: 3rem;
   font-weight: 700;
@@ -25,7 +25,7 @@ h1 {
 
 /* form */
 
-form {
+.formJ {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@ form {
   margin-bottom: 2rem;
 }
 
-form div{
+.formJ div{
   margin-top: 3rem;
   width: 80%;
   display: grid;
@@ -69,12 +69,12 @@ form div{
   grid-area: texto;
 }
 
-input {
+.inputJ {
   border: 1px solid #ccc;
   padding: 0.5rem 1rem;
 }
 
-form textarea {
+.formJ textarea {
   resize: none;
   border: 1px solid #ccc;
   padding: 0.5rem 1rem;
@@ -82,7 +82,7 @@ form textarea {
 }
 
 
-form button {
+.formJ button {
   margin-top: 2rem;
   background-color: #3a5ad8;
   color: white;
@@ -91,17 +91,17 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.formJ button:hover {
   opacity: .8;
   transition: 0.1s;
 }
 
 @media screen and (max-width: 768px) {
-  form {
+  .formJ {
     display: inline;
   }
 
-  form div{
+  .formJ div{
     grid-template-areas: 
     'name email'
     'telefone bairro'
@@ -109,7 +109,7 @@ form button:hover {
     'texto texto';
   }
 
-  .container {
+  .containerJ {
     margin-bottom: 2rem;
   }
 }
