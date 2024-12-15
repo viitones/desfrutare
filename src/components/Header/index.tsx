@@ -2,10 +2,17 @@ import './index.css'
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
+import hamb from '../../assets/icon.svg'
+import { useState } from 'react'
+
 export function Header() {
-  function closeNav() {
+  const [close, setClose] = useState(false)
+
+  function handleCloseNav() {
+    setClose(true)
   }
-  function openNav() {
+  function handleOpenNav() {
+    setClose(false)
   }
 
     return (
@@ -23,8 +30,8 @@ export function Header() {
           <a href="#contato">Contato</a>
         </nav>
 
-        <div id="mynav" className="overlay">
-          <a href="javascript:void(0)" className="close-btn" onClick={closeNav}>
+        <div id="mynav" className="overlay" data-close={close}>
+          <a href="javascript:void(0)" className="close-btn" onClick={handleOpenNav}>
             &times;
           </a>
 
@@ -36,8 +43,8 @@ export function Header() {
           </div>
         </div>
 
-        <button className="btn-ico" onClick={openNav}>
-          <img src="./assets/icon.svg" alt="" />
+        <button className="btn-ico" onClick={handleCloseNav}>
+          <img src={hamb} alt="" />
         </button>
       </div>
     </header>
