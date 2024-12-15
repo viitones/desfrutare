@@ -1,5 +1,6 @@
 import './index.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 export function Header() {
   function closeNav() {
@@ -18,7 +19,7 @@ export function Header() {
           <div>
             <a href="#modalidade">Modalidades</a>
           </div>
-          <a href="./transparencia.html">Transparência</a>
+          <Link to="./transparencia.html">Transparência</Link>
           <a href="#contato">Contato</a>
         </nav>
 
