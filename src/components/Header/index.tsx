@@ -24,10 +24,10 @@ export function Header() {
         <nav>
           <Link to="/">Início</Link>
           <div>
-            <a href="#modalidade">Modalidades</a>
+            <a href="/#modalidade">Modalidades</a>
           </div>
           <Link to="/transparence">Transparência</Link>
-          <a href="#contato">Contato</a>
+          <a href="/#contato">Contato</a>
         </nav>
 
         <div id="mynav" className="overlay" data-close={close}>

@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
 
   {
     path: '/transparence',
-    element: <Transparence />
+    element: <Transparence />,
   }
     
 ])
