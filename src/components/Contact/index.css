@@ -1,11 +1,12 @@
 .contato {
+  /* margin-top: 2rem; */
   margin-inline: auto;
   max-width: 1200px;
   text-align: center;
 }
 
 .contato > h2 {
-  margin-top: 3rem;
+  margin-top: 8rem;
   margin-inline: auto;
   font-size: 3rem;
   margin-bottom: 3rem;
@@ -50,7 +51,7 @@
   justify-content: center;
 }
 
-form div{
+#form div{
   margin-top: 1rem;
   width: 100%;
   display: grid;
@@ -119,4 +120,25 @@ form div{
    align-items: center;
    margin-inline: 1rem;
   }
+}
+
+@media screen and (max-width: 450px) {
+
+  #form div {
+    grid-template-areas: 
+  'name'
+  'sobrenome'
+  'email'
+  'telefone'
+  'texto';
+  }
+
+  #form {
+    width: 90%;
+  }
+
+  .inputC {
+    width: 100%;
+  }
+
 }

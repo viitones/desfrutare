@@ -43,7 +43,7 @@
 /* main */
 
 .mainInit {
-  margin-top: 3rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,12 +53,12 @@
 .mainInit h2 {
   color: black !important;
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .cardsInit {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;

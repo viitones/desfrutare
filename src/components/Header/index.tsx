@@ -37,9 +37,9 @@ export function Header() {
 
           <div className="conteudo">
             <Link to="/">Início</Link>
-            <a className="cls" href="#modalidade">Modalidades</a>
+            <a className="cls" href="/#modalidade">Modalidades</a>
             <Link to="/transparence">Transparência</Link>
-            <a className="cls" href="#contato">Contato</a>
+            <a className="cls" href="/#contato">Contato</a>
           </div>
         </div>
 
