@@ -26,18 +26,18 @@ export function Judo() {
             Jigoro Kano, seu fundador, descreveu o judô como "a arte de utilizar ao máximo a força física e espiritual". Segundo ele, cada vitória representa não apenas um triunfo físico, mas também um avanço no fortalecimento espiritual e no desenvolvimento pessoal. </p>
         </div>
       
-        <form className='formJ' id="form" action="https://api.web3forms.com/submit" method="POST">
+        <form className='formJ' id="formJ" action="https://api.web3forms.com/submit" method="POST">
           <div>
-            <input className='inputJ' type="text" placeholder="Nome" id="name" name="name" required />
+            <input className='inputJ nameJ' type="text" placeholder="Nome" id="nameJ" name="name" required />
 
-            <input className='inputJ' type="email" placeholder="Email" id="email" name="email" required />
-            <input className='inputJ' type="number" placeholder="Telefone" id="tel" name="tel" required />
+            <input className='inputJ emailJ' type="email" placeholder="Email" id="emailJ" name="email" required />
+            <input className='inputJ telJ' type="number" placeholder="Telefone" id="telJ" name="tel" required />
 
-            <input className='inputJ' type="text" placeholder="Bairro" id="bairro" name="bairro" required />
-            <input className='inputJ' type="text" placeholder="Cidade" id="cidade" name="cidade" required />
-            <input className='inputJ' type="text" placeholder="Modalidade desejada" id="modalidade" name="modalidade" required />
+            <input className='inputJ bairroJ' type="text" placeholder="Bairro" id="bairroJ" name="bairro" required />
+            <input className='inputJ cidadeJ' type="text" placeholder="Cidade" id="cidadeJ" name="cidade" required />
+            <input className='inputJ modalidadeJ' type="text" placeholder="Modalidade desejada" id="modalidadeJ" name="modalidade" required />
 
-            <textarea name="mensagem" id="mensagem" placeholder="Digte sua mensagem" />
+            <textarea className='mensagemJ' name="mensagem" id="mensagemJ" placeholder="Digte sua mensagem" />
           </div>
           <button id="finish">Enviar</button>
           <input className='inputJ' type="hidden" name="access_key" value="295612df-9df5-4cfc-8c6b-f7f2ed8b8a19" />

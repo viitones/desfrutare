@@ -29,8 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: auto;
 
   margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 .formJ div{
@@ -44,28 +46,28 @@
   gap: 1rem;
 }
 
-#name {
+.nameJ {
   grid-area: name;
 }
 
-#email {
+.emailJ {
   grid-area: email;
 }
-#tel {
+.telJ {
   grid-area: telefone;
 }
 
-#bairro {
+.bairroJ {
   grid-area: bairro;
 }
-#cidade {
+.cidadeJ {
   grid-area: cidade;
 }
-#modalidade {
+.modalidadeJ {
   grid-area: modalidade;
 } 
 
-#mensagem {
+.mensagemJ {
   grid-area: texto;
 }
 
@@ -98,7 +100,7 @@
 
 @media screen and (max-width: 768px) {
   .formJ {
-    display: inline;
+    display: flex;
   }
 
   .formJ div{
@@ -126,3 +128,16 @@
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .formJ div{
+    grid-template-areas: 
+    'name' 
+    'email'
+    'telefone' 
+    'bairro'
+    'cidade' 
+    'modalidade'
+    'texto';
+  }
+ }
