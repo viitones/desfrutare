@@ -1,0 +1,27 @@
+{
+  "galeria": [
+    {
+      "id": 1,
+      "alt": "imagem1",
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/IMG_2846.JPG"
+    },
+
+    {
+      "id": 2,
+      "alt": "imagem2",
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/IMG_2850.JPG"
+    },
+
+    {
+      "id": 3,
+      "alt": "imagem3",
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/IMG_8230.JPG"
+    },
+
+    {
+      "id": 4,
+      "alt": "imagem4",
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/IMG_8262.JPG"
+    }
+  ]
+}
