@@ -10,6 +10,7 @@ import { Contact } from "../../components/Contact";
 import { Localization } from "../../components/Localization";
 import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
+import Slider from "../../components/Slider";
 
 export function InitialPage() {
 
@@ -54,6 +55,12 @@ export function InitialPage() {
             <img src={volei} alt="" />
           </div>
         </div>
+
+        <h2>Galeria</h2>
+        <div className="galeria">
+          <Slider />
+        </div>
+
       </main>
 
       <Contact />

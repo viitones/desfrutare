@@ -59,6 +59,7 @@
 
 .cardsInit {
   margin-top: 8rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -116,6 +117,11 @@
   margin-left: auto;
 }
 
+.galeria {
+  margin-top: 3rem;
+  max-width: 1000px;
+}
+
 
 @media (max-width: 1168px) {
   .hero h1 {
@@ -134,7 +140,6 @@
   }
   
   .hero h2 {
-
     max-width: 300px;
   }
 
@@ -155,5 +160,14 @@
   .mainInit h2 {
     font-size: 3.5rem;
     max-width: fit-content;
+  }
+
+  .mainInit {
+    margin-top: 5rem;
+  }
+
+  .galeria {
+    margin: 0 10px 25px;
+    max-width: 400px;
   }
 }

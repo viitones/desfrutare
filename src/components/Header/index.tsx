@@ -3,10 +3,24 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
 import hamb from '../../assets/icon.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export function Header() {
   const [close, setClose] = useState(false)
+
+  function handleClickOutside(event: MouseEvent) {
+    const nav = document.getElementById('mynav')
+    if (nav && !nav.contains(event.target as Node)) {
+      setClose(false)      
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [handleClickOutside])
 
   function handleCloseNav() {
     setClose(true)
@@ -18,16 +32,14 @@ export function Header() {
     return (
     <header>
       <div>
-        <div className="img-container">
+        <Link to="/" className="img-container">
           <img src={logo} alt="infinity institute" />
-        </div>
+        </Link>
         <nav>
-          <Link to="/">Início</Link>
-          <div>
-            <a href="/#modalidade">Modalidades</a>
-          </div>
-          <Link to="/transparence">Transparência</Link>
-          <a href="/#contato">Contato</a>
+          <Link className='link' to="/">Início</Link>
+          <a className='link' href="/#modalidade">Modalidades</a>
+          <Link className='link' to="/transparence">Transparência</Link>
+          <a className='link' href="/#contato">Contato</a>
         </nav>
 
         <div id="mynav" className="overlay" data-close={close}>

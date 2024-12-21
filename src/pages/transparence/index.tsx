@@ -1,5 +1,8 @@
 import { Header } from '../../components/Header'
 import './index.css'
+
+import {futebol, queimada} from '../../../galeria.json'
+
 export function Transparence() {
   return (
     <>
@@ -31,24 +34,21 @@ export function Transparence() {
                 <h3>Queimada</h3>
                 <div className="pictures">
                   
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/3.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/4.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/5.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/6.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/7.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/8.avif" alt="" height="300" width="300" />
+                  {queimada.map((img) => {
+                    return(
+                      <img src={img.src} alt={img.alt} key={img.id} height="300" width="300" />
+                    )
+                  })}
+
                 </div>
 
                 <h3>Futebol</h3>
                 <div className="pictures">
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/1.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/2.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/3.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/4.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/5.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/6.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/7.avif" alt="" height="300" width="300" />
-                  <img src="https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/8.avif" alt="" height="300" width="300" />
+                  {futebol.map((img) => {
+                    return(
+                      <img src={img.src} alt={img.alt} key={img.id} height="300" width="300" />
+                    )
+                  })}
                 </div>
               </div>
             </div>
