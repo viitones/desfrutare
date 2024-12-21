@@ -8,6 +8,7 @@ import 'swiper/swiper-bundle.css';
 import './index.css';
 
 import { galeria } from '../../../galeria.json';
+import { Link } from 'react-router-dom';
 
 
 const Slider: React.FC = () => {
@@ -37,10 +38,10 @@ const Slider: React.FC = () => {
       {galeria.map((img) => {
         return (
           <SwiperSlide className='card-item'>
-            <a className='card-link' href="/transparence" key={img.id}>
+            <Link className='card-link' to="/transparence" key={img.id}>
               <img className='card-image' src={img.src} alt={img.alt} />
               <div className={`badge badge-${img.barret}`}>{img.barret}</div>
-            </a>
+            </Link>
           </SwiperSlide>
         )
       })}
