@@ -36,7 +36,7 @@ export function Transparence() {
                   
                   {queimada.map((img) => {
                     return(
-                      <img src={img.src} alt={img.alt} key={img.id} height="300" width="300" />
+                      <img src={img.src} alt={img.alt} key={img.id} height={300} width={300}/>
                     )
                   })}
 
@@ -46,7 +46,7 @@ export function Transparence() {
                 <div className="pictures">
                   {futebol.map((img) => {
                     return(
-                      <img src={img.src} alt={img.alt} key={img.id} height="300" width="300" />
+                      <img src={img.src} alt={img.alt} key={img.id} height={300} width={300} />
                     )
                   })}
                 </div>
