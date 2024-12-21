@@ -2,7 +2,8 @@ import React from 'react';
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css/bundle';
+import 'swiper/swiper-bundle.css';
+
 
 import './index.css';
 
@@ -38,7 +39,7 @@ const Slider: React.FC = () => {
           <SwiperSlide className='card-item'>
             <a className='card-link' href="/transparence" key={img.id}>
               <img className='card-image' src={img.src} alt={img.alt} />
-              <div className="badge">Volei</div>
+              <div className="badge">{img.barret}</div>
             </a>
           </SwiperSlide>
         )
