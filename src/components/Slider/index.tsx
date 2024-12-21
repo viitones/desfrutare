@@ -39,7 +39,7 @@ const Slider: React.FC = () => {
           <SwiperSlide className='card-item'>
             <a className='card-link' href="/transparence" key={img.id}>
               <img className='card-image' src={img.src} alt={img.alt} />
-              <div className="badge">{img.barret}</div>
+              <div className={`badge badge-${img.barret}`}>{img.barret}</div>
             </a>
           </SwiperSlide>
         )

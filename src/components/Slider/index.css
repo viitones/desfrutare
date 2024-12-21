@@ -57,9 +57,22 @@
   font-weight: 500;
   padding: 8px 16px;
   margin: 16px 0 18px;
-  background: #DDE4FF;
   width: fit-content;
   border-radius: 50px;
+}
+
+.badge-Futebol {
+  background: #DDE4FF;
+}
+
+.badge-Queimada {
+  background: #FDFD96;
+  color: #6e6e00;
+}
+
+.badge-Equipe {
+  background: #BDECB6;
+  color: #0f7400;
 }
 
 .swiper-pagination-bullet {

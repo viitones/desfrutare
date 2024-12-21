@@ -4,91 +4,91 @@
       "id": 1,
       "alt": "Imagem 1 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(1).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(1).avif"
     },
     {
       "id": 2,
       "alt": "Imagem 2 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(2).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(2).avif"
     },
     {
       "id": 3,
       "alt": "Imagem 3 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(3).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(3).avif"
     },
     {
       "id": 4,
       "alt": "Imagem 4 da galeria",
       "barret": "Equipe",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(4).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(4).avif"
     },
     {
       "id": 5,
       "alt": "Imagem 5 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(5).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(5).avif"
     },
     {
       "id": 6,
       "alt": "Imagem 6 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(6).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(6).avif"
     },
     {
       "id": 7,
       "alt": "Imagem 7 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(7).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(7).avif"
     },
     {
       "id": 8,
       "alt": "Imagem 8 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(8).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(8).avif"
     },
     {
       "id": 9,
       "alt": "Imagem 9 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(9).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(9).avif"
     },
     {
       "id": 10,
       "alt": "Imagem 10 da galeria",
       "barret": "Queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(10).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(10).avif"
     },
     {
       "id": 11,
       "alt": "Imagem 11 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(11).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(11).avif"
     },
     {
       "id": 12,
       "alt": "Imagem 12 da galeria",
       "barret": "Equipe",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(12).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(12).avif"
     },
     {
       "id": 13,
       "alt": "Imagem 13 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(13).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(13).avif"
     },
     {
       "id": 14,
       "alt": "Imagem 14 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(14).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(14).avif"
     },
     {
       "id": 15,
       "alt": "Imagem 15 da galeria",
       "barret": "Futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(15).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/galeria/foto+(15).avif"
     }
   ],
   "futebol": [
@@ -100,144 +100,144 @@
     {
       "id": 2,
       "alt": "Imagem 2 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(1).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(1).avif"
     },
     {
       "id": 3,
       "alt": "Imagem 3 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(2).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(2).avif"
     },
     {
       "id": 4,
       "alt": "Imagem 4 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(3).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(3).avif"
     },
     {
       "id": 5,
       "alt": "Imagem 5 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(4).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(4).avif"
     },
     {
       "id": 6,
       "alt": "Imagem 6 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(5).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(5).avif"
     },
     {
       "id": 7,
       "alt": "Imagem 7 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(6).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(6).avif"
     },
     {
       "id": 8,
       "alt": "Imagem 8 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(7).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(7).avif"
     },
     {
       "id": 9,
       "alt": "Imagem 9 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(8).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(8).avif"
     },
     {
       "id": 10,
       "alt": "Imagem 10 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(9).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(9).avif"
     },
     {
       "id": 11,
       "alt": "Imagem 11 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(10).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(10).avif"
     },
     {
       "id": 12,
       "alt": "Imagem 12 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(11).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(11).avif"
     },
     {
       "id": 13,
       "alt": "Imagem 13 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(12).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(12).avif"
     },
     {
       "id": 14,
       "alt": "Imagem 14 do futebol",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(13).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/fut/foto+(13).avif"
     }
   ],
   "queimada": [
     {
       "id": 1,
       "alt": "Imagem 1 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(1).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(1).avif"
     },
     {
       "id": 2,
       "alt": "Imagem 2 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(2).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(2).avif"
     },
     {
       "id": 3,
       "alt": "Imagem 3 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(3).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(3).avif"
     },
     {
       "id": 4,
       "alt": "Imagem 4 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(4).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(4).avif"
     },
     {
       "id": 5,
       "alt": "Imagem 5 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(5).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(5).avif"
     },
     {
       "id": 6,
       "alt": "Imagem 6 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(6).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(6).avif"
     },
     {
       "id": 7,
       "alt": "Imagem 7 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(7).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(7).avif"
     },
     {
       "id": 8,
       "alt": "Imagem 8 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(8).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(8).avif"
     },
     {
       "id": 9,
       "alt": "Imagem 9 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(9).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(9).avif"
     },
     {
       "id": 10,
       "alt": "Imagem 10 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(10).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(10).avif"
     },
     {
       "id": 11,
       "alt": "Imagem 11 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(11).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(11).avif"
     },
     {
       "id": 12,
       "alt": "Imagem 12 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(12).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(12).avif"
     },
     {
       "id": 13,
       "alt": "Imagem 13 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(13).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(13).avif"
     },
     {
       "id": 14,
       "alt": "Imagem 14 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(14).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(14).avif"
     },
     {
       "id": 15,
       "alt": "Imagem 15 da queimada",
-      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(15).JPG"
+      "src": "https://imagesdesfrutare.s3.us-east-1.amazonaws.com/queimada/foto+(15).avif"
     }
   ]
 }
