@@ -64,7 +64,7 @@ export function InitialPage() {
           reverse={true}
           direction="horizontal"
           config={{ tension: 50, friction: 20 }}
-          initialOpacity={0}
+          initialOpacity={0.1}
           animateOpacity
           scale={0.7}
           threshold={0.2}
@@ -89,7 +89,7 @@ export function InitialPage() {
             distance={200}
             direction="horizontal"
             config={{ tension: 50, friction: 20 }}
-            initialOpacity={0}
+            initialOpacity={0.1}
             animateOpacity
             scale={0.7}
             threshold={0.2}
@@ -113,7 +113,7 @@ export function InitialPage() {
           reverse={true}
           direction="vertical"
           config={{ tension: 50, friction: 20 }}
-          initialOpacity={0}
+          initialOpacity={0.1}
           animateOpacity
           scale={0.7}
           threshold={0.2}
@@ -124,7 +124,7 @@ export function InitialPage() {
           distance={120}
           direction="vertical"
           config={{ tension: 50, friction: 20 }}
-          initialOpacity={0}
+          initialOpacity={0.1}
           animateOpacity
           scale={0.7}
           threshold={0.2}
