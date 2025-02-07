@@ -1,9 +1,44 @@
 import { Header } from '../../components/Header'
 import './index.css'
 
-import {futebol, queimada} from '../../../galeria.json'
+import Masonry from '../../components/React-Bits/Masonry'
+
+const dataq = [
+  { id: 1, image: 'https://i.ibb.co/Cs0Gkd7Q/foto-1.jpg', height: 400 },
+  { id: 2, image: 'https://i.ibb.co/27T0c0h3/foto-2.jpg', height: 300 },
+  { id: 3, image: 'https://i.ibb.co/mC81gg80/foto-3.jpg', height: 700 },
+  { id: 4, image: 'https://i.ibb.co/XcfWkkG/foto-4.jpg', height: 400 },
+  { id: 5, image: 'https://i.ibb.co/1hTHXjr/foto-5.jpg', height: 400 },
+  { id: 6, image: 'https://i.ibb.co/7tLx14gz/foto-6.jpg', height: 300 },
+  { id: 7, image: 'https://i.ibb.co/207vRY41/foto-7.jpg', height: 350 },
+  { id: 8, image: 'https://i.ibb.co/zHBjQZ1K/foto-8.jpg', height: 400 },
+  { id: 9, image: 'https://i.ibb.co/1JZ6NLSZ/foto-9.jpg', height: 400 },
+  { id: 10, image: 'https://i.ibb.co/zhfBmJ9d/foto-10.jpg', height: 300 },
+  { id: 11, image: 'https://i.ibb.co/vvRCGQPK/foto-11.jpg', height: 350 },
+  { id: 12, image: 'https://i.ibb.co/svw4Y6fP/foto-12.jpg', height: 600 },
+  { id: 13, image: 'https://i.ibb.co/PvCmWhn0/foto-13.jpg', height: 450 },
+  { id: 14, image: 'https://i.ibb.co/zhQzKrBx/foto-15.jpg', height: 500 },
+  { id: 15, image: 'https://i.ibb.co/v6FwVKp3/foto-14.jpg', height: 400 }
+];
+
+const dataf = [
+  { id: 1, image: 'https://i.ibb.co/bMFTqBrP/foto-1.jpg', height: 400 },
+  { id: 2, image: 'https://i.ibb.co/Y7fGZgZv/foto-2.jpg', height: 500 },
+  { id: 3, image: 'https://i.ibb.co/ZjMCjJv/foto-3.jpg', height: 300 },
+  { id: 4, image: 'https://i.ibb.co/hJPXGzgN/foto-4.jpg', height: 200 },
+  { id: 5, image: 'https://i.ibb.co/S4rY8Tpt/foto-5.jpg', height: 400 },
+  { id: 6, image: 'https://i.ibb.co/XkFF9xXH/foto-6.jpg', height: 600 },
+  { id: 7, image: 'https://i.ibb.co/knBDDkK/foto-7.jpg', height: 400 },
+  { id: 8, image: 'https://i.ibb.co/BbCVC0R/foto-8.jpg', height: 600 },
+  { id: 9, image: 'https://i.ibb.co/Nn2WcBFy/foto-9.jpg', height: 300 },
+  { id: 10, image: 'https://i.ibb.co/qYqm8qRh/foto-10.jpg', height: 300 },
+  { id: 11, image: 'https://i.ibb.co/5xfqQQty/foto-11.jpg', height: 400 },
+  { id: 12, image: 'https://i.ibb.co/svP8tPcR/foto-12.jpg', height: 500 },
+  { id: 13, image: 'https://i.ibb.co/B2VMX4FT/foto-13.jpg', height: 700 },
+];
 
 export function Transparence() {
+
   return (
     <>
       <div className="body">
@@ -32,24 +67,30 @@ export function Transparence() {
               <div className="projetos">
                 <h2>Projetos:</h2>
                 <h3>Queimada</h3>
+
                 <div className="pictures">
                   
-                  {queimada.map((img) => {
+                  <Masonry data={dataq} />
+
+                  {/* {queimada.map((img) => {
                     return(
                       <img src={img.src} alt={img.alt} key={img.id} height={300} width={300}/>
                     )
-                  })}
+                  })} */}
 
                 </div>
 
                 <h3>Futebol</h3>
-                <div className="pictures">
+
+                <Masonry data={dataf} />
+
+                {/* <div className="pictures">
                   {futebol.map((img) => {
                     return(
                       <img src={img.src} alt={img.alt} key={img.id} height={300} width={300} />
                     )
                   })}
-                </div>
+                </div> */}
               </div>
             </div>
           </main>
