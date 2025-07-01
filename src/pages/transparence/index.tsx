@@ -1,7 +1,7 @@
 import { Header } from '../../components/Header';
 import './index.css';
 
-import iconExcel from '../../assets/excel.svg';
+import iconExcel from '../../assets/excel.png';
 import iconPdf from '../../assets/pdf.png';
 
 import fut1 from '../../assets/fut/foto1.avif';
