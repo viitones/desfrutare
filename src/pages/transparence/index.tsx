@@ -1,6 +1,9 @@
 import { Header } from '../../components/Header';
 import './index.css';
 
+import iconExcel from '../../assets/excel.svg';
+import iconPdf from '../../assets/pdf.png';
+
 import fut1 from '../../assets/fut/foto1.avif';
 import fut10 from '../../assets/fut/foto10.avif';
 import fut11 from '../../assets/fut/foto11.avif';
@@ -62,7 +65,6 @@ const dataf = [
   { id: 13, image: fut13, height: 700 },
 ];
 
-
 export function Transparence() {
 
   return (
@@ -78,16 +80,24 @@ export function Transparence() {
               <h2>Administrativo</h2>
               <div className="cardsT">
                 <a className="cardT" href="./downloads/ExtratoProposta.pdf" download="">
-                  <img src="https://static.wixstatic.com/media/40d80b8089c8418a961cb75d96d491f7.png/v1/fill/w_52,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/40d80b8089c8418a961cb75d96d491f7.png" alt="" />
+                  <img src={iconPdf} alt="" />
                   <p>Proposta</p>
                 </a>
                 <a className="cardT" href="./downloads/Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf" download="">
-                  <img src="https://static.wixstatic.com/media/40d80b8089c8418a961cb75d96d491f7.png/v1/fill/w_52,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/40d80b8089c8418a961cb75d96d491f7.png" alt="" />
+                  <img src={iconPdf} alt="" />
                   <p>Termo de Fomento</p>
                 </a>
                 <a className="cardT" href="./downloads/Publicação D.O.U. - Desfrutare ONG - DF.pdf" download="">
-                  <img src="https://static.wixstatic.com/media/40d80b8089c8418a961cb75d96d491f7.png/v1/fill/w_52,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/40d80b8089c8418a961cb75d96d491f7.png" alt="" />
+                  <img src={iconPdf} alt="" />
                   <p>Extrato Termo de Fomento</p>
+                </a>
+                <a className="cardT" href="./downloads/Painel Discricionárias.pdf" download="">
+                  <img src={iconPdf} alt="" />
+                  <p>Painel Discricionárias</p>
+                </a>
+                <a className="cardT" href="./downloads/Planilha - Painel Discricionárias.xlsx" download="">
+                  <img src={iconExcel} alt="" />
+                  <p>Planilha - Painel Discricionárias</p>
                 </a>
               </div>
               <div className="projetos">
