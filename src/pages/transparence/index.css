@@ -63,10 +63,13 @@
   padding-top: 2rem;
   margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-content: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
   gap: 2rem;
+  /* vertical-align: top; */
+
 }
 
 .cardT {
