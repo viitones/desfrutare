@@ -80,23 +80,27 @@ export function Transparence() {
               <h2>Administrativo</h2>
               <div className="cardsT">
                 <a className="cardT" href="./downloads/ExtratoProposta.pdf" download="">
-                  <img src={iconPdf} alt="" />
+                  <img src={iconPdf} alt="baixar proposta" />
                   <p>Proposta</p>
                 </a>
                 <a className="cardT" href="./downloads/Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf" download="">
-                  <img src={iconPdf} alt="" />
+                  <img src={iconPdf} alt="baixar termo de fomento" />
                   <p>Termo de Fomento</p>
                 </a>
                 <a className="cardT" href="./downloads/Publicação D.O.U. - Desfrutare ONG - DF.pdf" download="">
-                  <img src={iconPdf} alt="" />
+                  <img src={iconPdf} alt="baixar extrato de fomento" />
                   <p>Extrato Termo de Fomento</p>
                 </a>
                 <a className="cardT" href="./downloads/Painel Discricionárias.pdf" download="">
-                  <img src={iconPdf} alt="" />
+                  <img src={iconPdf} alt="baixar painel discricionárias" />
                   <p>Painel Discricionárias</p>
                 </a>
+                <a className="cardT" href="./downloads/ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE.pdf" download="">
+                  <img src={iconPdf} alt="baixar edital 01/2026" />
+                  <p style={{fontSize: "16px"}}>ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE</p>
+                </a>
                 <a className="cardT" href="./downloads/Planilha - Painel Discricionárias.xlsx" download="">
-                  <img src={iconExcel} alt="" />
+                  <img src={iconExcel} alt="baixar painel discricionárias (planilha)" />
                   <p>Planilha - Painel Discricionárias</p>
                 </a>
               </div>
