@@ -1,18 +1,33 @@
 import { Header } from "../../components/Header";
 
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/swiper-bundle.css';
+
 
 import './index.css';
 
 import judo from '../../assets/Judô.png';
 import volei from '../../assets/volei.png';
 
-import { Contact } from "../../components/Contact";
-import { Localization } from "../../components/Localization";
-import { Footer } from "../../components/Footer";
 import { Link } from "react-router-dom";
-import Slider from "../../components/Slider";
-import SplitText from "../../components/React-Bits/Split-text";
+import { Contact } from "../../components/Contact";
+import { Footer } from "../../components/Footer";
+import { Localization } from "../../components/Localization";
 import AnimatedContent from "../../components/React-Bits/Animated-content";
+import SplitText from "../../components/React-Bits/Split-text";
+import Slider from "../../components/Slider";
+
+import { Autoplay, EffectCoverflow, Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+import ad1 from '../../assets/ads/inscricao_judo.jpeg';
+import ad2 from '../../assets/ads/seletiva_volei.jpeg';
+import ad3 from '../../assets/ads/seletiva_volei2.jpeg';
+
+
+import 'swiper/swiper-bundle.css';
 
 export function InitialPage() {
 
@@ -47,6 +62,41 @@ export function InitialPage() {
       </section>
 
       <main id="modalidade" className="container mainInit">
+        <section className="ads-banner">
+          <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            initialSlide={1}
+            loop={true}
+            coverflowEffect={{
+              rotate: 15,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
+            className="myAdsSwiper"
+          >
+            <SwiperSlide><img src={ad1} alt="Anúncio 1" /></SwiperSlide>
+            <SwiperSlide><img src={ad2} alt="Anúncio 2" /></SwiperSlide>
+            <SwiperSlide><img src={ad3} alt="Anúncio 3" /></SwiperSlide>
+            <SwiperSlide><img src={ad1} alt="Anúncio 1 - cópia" /></SwiperSlide>
+            <SwiperSlide><img src={ad2} alt="Anúncio 2 - cópia" /></SwiperSlide>
+            <SwiperSlide><img src={ad3} alt="Anúncio 3 - cópia" /></SwiperSlide>
+          </Swiper>
+        </section>
+
         <AnimatedContent
           distance={200}
           direction="vertical"

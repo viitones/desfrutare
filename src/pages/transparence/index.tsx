@@ -99,6 +99,10 @@ export function Transparence() {
                   <img src={iconPdf} alt="baixar edital 01/2026" />
                   <p style={{fontSize: "16px"}}>ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE</p>
                 </a>
+                <a className="cardT" href="./downloads/ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.docx.pdf" download="">
+                  <img src={iconPdf} alt="baixar edital 02/2026" />
+                  <p style={{fontSize: "16px"}}>ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE</p>
+                </a>
                 <a className="cardT" href="./downloads/Planilha - Painel Discricionárias.xlsx" download="">
                   <img src={iconExcel} alt="baixar painel discricionárias (planilha)" />
                   <p>Planilha - Painel Discricionárias</p>

@@ -37,7 +37,7 @@ const Slider: React.FC = () => {
     >
       {galeria.map((img) => {
         return (
-          <SwiperSlide className='card-item'>
+          <SwiperSlide className='card-item' key={img.id}>
             <Link className='card-link' to="/transparence" key={img.id}>
               <img className='card-image' src={img.src} alt={img.alt} />
               <div className={`badge badge-${img.barret}`}>{img.barret}</div>
