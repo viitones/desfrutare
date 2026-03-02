@@ -216,7 +216,7 @@
 }
 
 /* Customizing Swiper Bullets */
-.myAdsSwiper .swiper-pagination-bullet {
+/* .myAdsSwiper .swiper-pagination-bullet {
   background: #1e293b;
   opacity: 0.2;
   width: 8px;
@@ -229,6 +229,17 @@
   background: #1851c3;
   width: 24px;
   border-radius: 4px;
+} */
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .myAdsSwiper .swiper-pagination {

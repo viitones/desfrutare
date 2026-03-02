@@ -18,7 +18,7 @@ import AnimatedContent from "../../components/React-Bits/Animated-content";
 import SplitText from "../../components/React-Bits/Split-text";
 import Slider from "../../components/Slider";
 
-import { Autoplay, EffectCoverflow, Pagination, A11y } from 'swiper/modules';
+import { A11y, Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -81,11 +81,12 @@ export function InitialPage() {
               delay: 3500,
               disableOnInteraction: false,
             }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
+            pagination={{ el: '.swiper-pagination', clickable: true, dynamicBullets: true}}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}  
+            modules={[Autoplay, Pagination, Navigation, EffectCoverflow, A11y]}
             className="myAdsSwiper"
           >
             <SwiperSlide><img src={ad1} alt="Anúncio 1" /></SwiperSlide>
@@ -94,6 +95,13 @@ export function InitialPage() {
             <SwiperSlide><img src={ad1} alt="Anúncio 1 - cópia" /></SwiperSlide>
             <SwiperSlide><img src={ad2} alt="Anúncio 2 - cópia" /></SwiperSlide>
             <SwiperSlide><img src={ad3} alt="Anúncio 3 - cópia" /></SwiperSlide>
+            <div className="slider-controler">
+              <div className="swiper-button-prev slide-arrow">
+              </div>
+              <div className="swiper-button-next slide-arrow">
+              </div>
+              <div className="swiper-pagination"></div>
+            </div>  
           </Swiper>
         </section>
 
