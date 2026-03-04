@@ -69,7 +69,6 @@ export function InitialPage() {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
-            slidesPerGroup={1}
             initialSlide={1}
             loop={true}
             loopAdditionalSlides={5}
