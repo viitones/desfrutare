@@ -68,7 +68,7 @@ export function InitialPage() {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={2.4}
+            slidesPerView={"auto"}
             slidesPerGroup={1}
             initialSlide={1}
             loop={true}
