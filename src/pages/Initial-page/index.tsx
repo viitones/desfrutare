@@ -70,6 +70,7 @@ export function InitialPage() {
             slidesPerGroup={1}
             initialSlide={1}
             loop={true}
+            loopAdditionalSlides={5}
             coverflowEffect={{
               rotate: 15,
               stretch: 0,
