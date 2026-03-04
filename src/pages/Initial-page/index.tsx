@@ -111,6 +111,24 @@ export function InitialPage() {
             <SwiperSlide>
               <img src={ad3} alt="Anúncio 3 - cópia" />
             </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad1} alt="Anúncio 1 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad2} alt="Anúncio 2 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad3} alt="Anúncio 3 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad1} alt="Anúncio 1 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad2} alt="Anúncio 2 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad3} alt="Anúncio 3 - cópia" />
+            </SwiperSlide>
             <div className="swiper-pagination"></div>
 
             <div className="slider-controler">
