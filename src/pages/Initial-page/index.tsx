@@ -1,14 +1,9 @@
 import { Header } from "../../components/Header";
 
-import { Navigation } from 'swiper/modules';
+import "swiper/swiper-bundle.css";
 
-import 'swiper/swiper-bundle.css';
-
-
-import './index.css';
-
-import judo from '../../assets/Judô.png';
-import volei from '../../assets/volei.png';
+import judo from "../../assets/Judô.png";
+import volei from "../../assets/volei.png";
 
 import { Link } from "react-router-dom";
 import { Contact } from "../../components/Contact";
@@ -18,21 +13,25 @@ import AnimatedContent from "../../components/React-Bits/Animated-content";
 import SplitText from "../../components/React-Bits/Split-text";
 import Slider from "../../components/Slider";
 
-import { A11y, Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import "swiper/swiper-bundle.css";
 
-import ad1 from '../../assets/ads/inscricao_judo.jpeg';
-import ad2 from '../../assets/ads/seletiva_volei.jpeg';
-import ad3 from '../../assets/ads/seletiva_volei2.jpeg';
+import "./index.css";
 
-
-import 'swiper/swiper-bundle.css';
+import ad1 from "../../assets/seletiva/inscricao_judo.jpeg";
+import ad2 from "../../assets/seletiva/seletiva_volei.jpeg";
+import ad3 from "../../assets/seletiva/seletiva_volei2.jpeg";
 
 export function InitialPage() {
-
   return (
-    
     <>
       <Header />
       <section className="hero">
@@ -42,8 +41,8 @@ export function InitialPage() {
             <SplitText
               text="Nós somos a Desfrutare"
               delay={50}
-              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
               threshold={0.2}
               rootMargin="-50px"
             />
@@ -52,8 +51,8 @@ export function InitialPage() {
             <SplitText
               text="Transformando Vidas Através do Esporte e da Alimentação Saudável para um Futuro mais Forte e Pleno!"
               delay={30}
-              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
               threshold={0.2}
               rootMargin="-50px"
             />
@@ -64,10 +63,11 @@ export function InitialPage() {
       <main id="modalidade" className="container mainInit">
         <section className="ads-banner">
           <Swiper
-            effect={'coverflow'}
+            effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={'auto'}
+            slidesPerView={2.4}
+            slidesPerGroup={1}
             initialSlide={1}
             loop={true}
             coverflowEffect={{
@@ -81,27 +81,43 @@ export function InitialPage() {
               delay: 3500,
               disableOnInteraction: false,
             }}
-            pagination={{ el: '.swiper-pagination', clickable: true, dynamicBullets: true}}
+            pagination={{
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            }}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            }}  
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
             modules={[Autoplay, Pagination, Navigation, EffectCoverflow, A11y]}
             className="myAdsSwiper"
           >
-            <SwiperSlide><img src={ad1} alt="Anúncio 1" /></SwiperSlide>
-            <SwiperSlide><img src={ad2} alt="Anúncio 2" /></SwiperSlide>
-            <SwiperSlide><img src={ad3} alt="Anúncio 3" /></SwiperSlide>
-            <SwiperSlide><img src={ad1} alt="Anúncio 1 - cópia" /></SwiperSlide>
-            <SwiperSlide><img src={ad2} alt="Anúncio 2 - cópia" /></SwiperSlide>
-            <SwiperSlide><img src={ad3} alt="Anúncio 3 - cópia" /></SwiperSlide>
+            <SwiperSlide>
+              <img src={ad1} alt="Anúncio 1" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad2} alt="Anúncio 2" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad3} alt="Anúncio 3" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad1} alt="Anúncio 1 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad2} alt="Anúncio 2 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad3} alt="Anúncio 3 - cópia" />
+            </SwiperSlide>
+            <div className="swiper-pagination"></div>
+
             <div className="slider-controler">
-              <div className="swiper-button-prev slide-arrow">
-              </div>
-              <div className="swiper-button-next slide-arrow">
-              </div>
+              <div className="swiper-button-prev slide-arrow"></div>
+              <div className="swiper-button-next slide-arrow"></div>
               <div className="swiper-pagination"></div>
-            </div>  
+            </div>
           </Swiper>
         </section>
 
@@ -114,33 +130,40 @@ export function InitialPage() {
           scale={0.7}
           threshold={0.2}
         >
-        <h2>Modalidades</h2>
+          <h2>Modalidades</h2>
         </AnimatedContent>
         <div className="cardsInit">
           <AnimatedContent
-          distance={200}
-          reverse={true}
-          direction="horizontal"
-          config={{ tension: 50, friction: 20 }}
-          initialOpacity={0.1}
-          animateOpacity
-          scale={0.7}
-          threshold={0.2}
+            distance={200}
+            reverse={true}
+            direction="horizontal"
+            config={{ tension: 50, friction: 20 }}
+            initialOpacity={0.1}
+            animateOpacity
+            scale={0.7}
+            threshold={0.2}
           >
             <div className="cardInit">
               <img src={judo} alt="" />
               <div>
                 <p>Judô</p>
-                <p className="left">O judô é uma arte marcial praticada como esporte de combate e fundada por Jigoro Kano em 1882. Os seus principais objetivos são fortalecer o físico, a mente e o espírito de forma integrada, além de desenvolver técnicas de defesa pessoal.
+                <p className="left">
+                  O judô é uma arte marcial praticada como esporte de combate e
+                  fundada por Jigoro Kano em 1882. Os seus principais objetivos
+                  são fortalecer o físico, a mente e o espírito de forma
+                  integrada, além de desenvolver técnicas de defesa pessoal.
                   <br />
-                  <br />
-                O Judô teve uma grande aceitação em todo o mundo, pois Kano conseguiu reunir a essência dos principais estilos e escolas de jujitsu, arte marcial praticada pelos "bushi", ou cavaleiros durante o período Kamakura (1185-1333), a outras artes de luta praticadas no Oriente...</p>
+                  <br />O Judô teve uma grande aceitação em todo o mundo, pois
+                  Kano conseguiu reunir a essência dos principais estilos e
+                  escolas de jujitsu, arte marcial praticada pelos "bushi", ou
+                  cavaleiros durante o período Kamakura (1185-1333), a outras
+                  artes de luta praticadas no Oriente...
+                </p>
 
                 <Link to="/judo">
                   <span>Saiba mais</span>
-                  </Link>
+                </Link>
               </div>
-              
             </div>
           </AnimatedContent>
           <AnimatedContent
@@ -151,15 +174,23 @@ export function InitialPage() {
             animateOpacity
             scale={0.7}
             threshold={0.2}
-            >
+          >
             <div className="cardInit right">
               <div>
                 <p>Vôlei</p>
-                <p>O voleibol é um esporte coletivo praticado entre duas equipes de seis jogadores, que se enfrentam em uma quadra dividida por uma rede. Foi criado em 1895 por William G. Morgan, nos Estados Unidos, com o objetivo de ser uma alternativa menos violenta ao basquete, mas igualmente dinâmica.
+                <p>
+                  O voleibol é um esporte coletivo praticado entre duas equipes
+                  de seis jogadores, que se enfrentam em uma quadra dividida por
+                  uma rede. Foi criado em 1895 por William G. Morgan, nos
+                  Estados Unidos, com o objetivo de ser uma alternativa menos
+                  violenta ao basquete, mas igualmente dinâmica.
                   <br />
-                  <br />
-                  O voleibol se popularizou rapidamente, espalhando-se por diversos países ao redor do mundo. Com o tempo, o esporte foi adaptado e passou a ser jogado em diferentes modalidades, como o vôlei...</p>
-                  <Link to="/volei">Saiba mais</Link>
+                  <br />O voleibol se popularizou rapidamente, espalhando-se por
+                  diversos países ao redor do mundo. Com o tempo, o esporte foi
+                  adaptado e passou a ser jogado em diferentes modalidades, como
+                  o vôlei...
+                </p>
+                <Link to="/volei">Saiba mais</Link>
               </div>
               <img src={volei} alt="" />
             </div>
@@ -191,7 +222,6 @@ export function InitialPage() {
             <Slider />
           </div>
         </AnimatedContent>
-
       </main>
 
       <Contact />
@@ -199,7 +229,6 @@ export function InitialPage() {
       <Localization />
 
       <Footer />
-
     </>
-  )
+  );
 }

@@ -43,7 +43,7 @@ export function Header() {
         </nav>
 
         <div id="mynav" className="overlay" data-close={close}>
-          <a href="javascript:void(0)" className="close-btn" onClick={handleOpenNav}>
+          <a href="#" className="close-btn" onClick={handleOpenNav}>
             &times;
           </a>
 

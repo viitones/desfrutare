@@ -215,22 +215,6 @@
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* Customizing Swiper Bullets */
-/* .myAdsSwiper .swiper-pagination-bullet {
-  background: #1e293b;
-  opacity: 0.2;
-  width: 8px;
-  height: 8px;
-  transition: all 0.3s ease;
-}
-
-.myAdsSwiper .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #1851c3;
-  width: 24px;
-  border-radius: 4px;
-} */
-
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -247,7 +231,7 @@
 }
 
 /* Customizing Swiper Navigation */
-.myAdsSwiper .swiper-button-next,
+/* .myAdsSwiper .swiper-button-next,
 .myAdsSwiper .swiper-button-prev {
   color: #1e293b;
   background: white;
@@ -269,7 +253,7 @@
 .myAdsSwiper .swiper-button-next:hover,
 .myAdsSwiper .swiper-button-prev:hover {
   transform: scale(1.08);
-}
+} */
 
 @media (max-width: 850px) {
   .myAdsSwiper .swiper-slide {
