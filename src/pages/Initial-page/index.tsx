@@ -63,6 +63,8 @@ export function InitialPage() {
       <main id="modalidade" className="container mainInit">
         <section className="ads-banner">
           <Swiper
+            observer={true}
+            observeParents={true}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -130,7 +132,6 @@ export function InitialPage() {
             <SwiperSlide>
               <img src={ad3} alt="Anúncio 3 - cópia" />
             </SwiperSlide>
-            <div className="swiper-pagination"></div>
 
             <div className="slider-controler">
               <div className="swiper-button-prev slide-arrow"></div>
