@@ -75,12 +75,26 @@ export function Header() {
           <div className="conteudo">
             <Link to="/">Início</Link>
             <a className="cls" href="/#modalidade">
-              Modalidades
+              Modalidadesa
             </a>
             <Link to="/transparence">Transparência</Link>
             <a className="cls" href="/#contato">
               Contato
             </a>
+            <Link
+              target="_blank"
+              className="conteudo"
+              to="https://docs.google.com/forms/d/e/1FAIpQLSctUvaSeFAknAe-gx8_W1xZcCTsGvDzVcUwB_e2pi2jjmo8eg/closedform"
+            >
+              Inscrição Vôlei
+            </Link>
+            <Link
+              target="_blank"
+              className="conteudo"
+              to="https://docs.google.com/forms/d/e/1FAIpQLSfDXFpsZ7ptKdKW4LWIWpOSLuwjOITpqF9pEFhiy8VMtG20Fg/viewform"
+            >
+              Inscrição Judô
+            </Link>
           </div>
         </div>
 
