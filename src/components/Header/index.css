@@ -30,6 +30,28 @@ header nav {
   font-weight: 600;
 }
 
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.btn-nav:hover {
+  background: white;
+  color: #0f1117;
+}
+
+.btn-nav:active {
+  transform: scale(0.98);
+}
+
 .link:hover  {
   filter: brightness(0.6);
 }
