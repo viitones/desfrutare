@@ -1,37 +1,37 @@
-import { Header } from '../../components/Header';
-import './index.css';
+import { Header } from "../../components/Header";
+import "./index.css";
 
-import iconExcel from '../../assets/excel.png';
-import iconPdf from '../../assets/pdf.png';
+import iconExcel from "../../assets/excel.png";
+import iconPdf from "../../assets/pdf.png";
 
-import fut1 from '../../assets/fut/foto1.avif';
-import fut10 from '../../assets/fut/foto10.avif';
-import fut11 from '../../assets/fut/foto11.avif';
-import fut12 from '../../assets/fut/foto12.avif';
-import fut13 from '../../assets/fut/foto13.avif';
-import fut2 from '../../assets/fut/foto2.avif';
-import fut3 from '../../assets/fut/foto3.avif';
-import fut4 from '../../assets/fut/foto4.avif';
-import fut5 from '../../assets/fut/foto5.avif';
-import fut6 from '../../assets/fut/foto6.avif';
-import fut7 from '../../assets/fut/foto7.avif';
-import fut8 from '../../assets/fut/foto8.avif';
-import fut9 from '../../assets/fut/foto9.avif';
-import Masonry from '../../components/React-Bits/Masonry';
+import fut1 from "../../assets/fut/foto1.avif";
+import fut10 from "../../assets/fut/foto10.avif";
+import fut11 from "../../assets/fut/foto11.avif";
+import fut12 from "../../assets/fut/foto12.avif";
+import fut13 from "../../assets/fut/foto13.avif";
+import fut2 from "../../assets/fut/foto2.avif";
+import fut3 from "../../assets/fut/foto3.avif";
+import fut4 from "../../assets/fut/foto4.avif";
+import fut5 from "../../assets/fut/foto5.avif";
+import fut6 from "../../assets/fut/foto6.avif";
+import fut7 from "../../assets/fut/foto7.avif";
+import fut8 from "../../assets/fut/foto8.avif";
+import fut9 from "../../assets/fut/foto9.avif";
+import Masonry from "../../components/React-Bits/Masonry";
 
-import queimada1 from '../../assets/queimada/foto1.avif';
-import queimada10 from '../../assets/queimada/foto10.avif';
-import queimada11 from '../../assets/queimada/foto11.avif';
-import queimada12 from '../../assets/queimada/foto12.avif';
-import queimada13 from '../../assets/queimada/foto13.avif';
-import queimada2 from '../../assets/queimada/foto2.avif';
-import queimada3 from '../../assets/queimada/foto3.avif';
-import queimada4 from '../../assets/queimada/foto4.avif';
-import queimada5 from '../../assets/queimada/foto5.avif';
-import queimada6 from '../../assets/queimada/foto6.avif';
-import queimada7 from '../../assets/queimada/foto7.avif';
-import queimada8 from '../../assets/queimada/foto8.avif';
-import queimada9 from '../../assets/queimada/foto9.avif';
+import queimada1 from "../../assets/queimada/foto1.avif";
+import queimada10 from "../../assets/queimada/foto10.avif";
+import queimada11 from "../../assets/queimada/foto11.avif";
+import queimada12 from "../../assets/queimada/foto12.avif";
+import queimada13 from "../../assets/queimada/foto13.avif";
+import queimada2 from "../../assets/queimada/foto2.avif";
+import queimada3 from "../../assets/queimada/foto3.avif";
+import queimada4 from "../../assets/queimada/foto4.avif";
+import queimada5 from "../../assets/queimada/foto5.avif";
+import queimada6 from "../../assets/queimada/foto6.avif";
+import queimada7 from "../../assets/queimada/foto7.avif";
+import queimada8 from "../../assets/queimada/foto8.avif";
+import queimada9 from "../../assets/queimada/foto9.avif";
 
 const dataq = [
   { id: 1, image: queimada1, height: 400 },
@@ -46,7 +46,7 @@ const dataq = [
   { id: 10, image: queimada10, height: 300 },
   { id: 11, image: queimada11, height: 350 },
   { id: 12, image: queimada12, height: 600 },
-  { id: 13, image: queimada13, height: 450 }
+  { id: 13, image: queimada13, height: 450 },
 ];
 
 const dataf = [
@@ -66,7 +66,6 @@ const dataf = [
 ];
 
 export function Transparence() {
-
   return (
     <>
       <div className="body">
@@ -74,71 +73,123 @@ export function Transparence() {
           <Header />
 
           <div className="main-container">
-          <main className='mainT'>
-            <h1>Transparência</h1>
-            <div>
-              <h2>Administrativo</h2>
-              <div className="cardsT">
-                <a className="cardT" href="/downloads/ExtratoProposta.pdf" download="ExtratoProposta.pdf">
-                  <img src={iconPdf} alt="baixar proposta" />
-                  <p>Proposta</p>
-                </a>
-                <a className="cardT" href="/downloads/Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf" download="Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf">
-                  <img src={iconPdf} alt="baixar termo de fomento" />
-                  <p>Termo de Fomento</p>
-                </a>
-                <a className="cardT" href="/downloads/Publicação D.O.U. - Desfrutare ONG - DF.pdf" download="Publicação D.O.U. - Desfrutare ONG - DF.pdf">
-                  <img src={iconPdf} alt="baixar extrato de fomento" />
-                  <p>Extrato Termo de Fomento</p>
-                </a>
-                <a className="cardT" href="/downloads/Painel Discricionárias.pdf" download="Painel Discricionárias.pdf">
-                  <img src={iconPdf} alt="baixar painel discricionárias" />
-                  <p>Painel Discricionárias</p>
-                </a>
-                <a className="cardT" href="/downloads/ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE.pdf" download="ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE.pdf">
-                  <img src={iconPdf} alt="baixar edital 01/2026" />
-                  <p style={{fontSize: "16px"}}>ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE</p>
-                </a>
-                <a className="cardT" href="/downloads/ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.docx.pdf" download="ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.docx.pdf">
-                  <img src={iconPdf} alt="baixar edital 02/2026" />
-                  <p style={{fontSize: "16px"}}>ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE</p>
-                </a>
-                <a className="cardT" href="/downloads/Planilha - Painel Discricionárias.xlsx" download="Planilha - Painel Discricionárias.xlsx">
-                  <img src={iconExcel} alt="baixar painel discricionárias (planilha)" />
-                  <p>Planilha - Painel Discricionárias</p>
-                </a>
-              </div>
-              <div className="projetos">
-                <h2>Projetos:</h2>
-                <h3>Queimada</h3>
-
-                <div className="pictures">
-
-                  <Masonry data={dataq} />
-
+            <main className="mainT">
+              <h1>Transparência</h1>
+              <div>
+                <h2>Administrativo</h2>
+                <div className="cardsT">
+                  <a
+                    className="cardT"
+                    href="/downloads/ExtratoProposta.pdf"
+                    download="ExtratoProposta.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar proposta" />
+                    <p>Proposta</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf"
+                    download="Termo de Fomento n° 941178-2023 - Desfrutare ONG - DF.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar termo de fomento" />
+                    <p>Termo de Fomento</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/Publicação D.O.U. - Desfrutare ONG - DF.pdf"
+                    download="Publicação D.O.U. - Desfrutare ONG - DF.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar extrato de fomento" />
+                    <p>Extrato Termo de Fomento</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/Painel Discricionárias.pdf"
+                    download="Painel Discricionárias.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar painel discricionárias" />
+                    <p>Painel Discricionárias</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE.pdf"
+                    download="ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar edital 01/2026" />
+                    <p style={{ fontSize: "16px" }}>
+                      ELABORAÇÃO EDITAL 01_2026 PROJETO DESFRUTARE
+                    </p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.docx.pdf"
+                    download="ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.docx.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar edital 02/2026" />
+                    <p style={{ fontSize: "16px" }}>
+                      ELABORAÇÃO EDITAL 02_2026 PROJETO DESFRUTARE
+                    </p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/DESFRUTARE ESPORTES - EDITAL 01_2025.pdf"
+                    download="DESFRUTARE ESPORTES - EDITAL 01_2025.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar painel edital" />
+                    <p>EDITAL 01_2025</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/Planilha - Painel Discricionárias.xlsx"
+                    download="Planilha - Painel Discricionárias.xlsx"
+                  >
+                    <img
+                      src={iconExcel}
+                      alt="baixar painel discricionárias (planilha)"
+                    />
+                    <p>Planilha - Painel Discricionárias</p>
+                  </a>
                 </div>
+                <div className="projetos">
+                  <h2>Projetos:</h2>
+                  <h3>Queimada</h3>
 
-                <h3>Futebol</h3>
+                  <div className="pictures">
+                    <Masonry data={dataq} />
+                  </div>
 
-                <div className="pictures">
-                  <Masonry data={dataf} />
+                  <h3>Futebol</h3>
+
+                  <div className="pictures">
+                    <Masonry data={dataf} />
+                  </div>
                 </div>
-
               </div>
-            </div>
-          </main>
-        
-          
-        </div>
-
+            </main>
+          </div>
         </div>
       </div>
 
-      <footer className='footerT'>
-      <a href="">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-      </a>
-    </footer>
+      <footer className="footerT">
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-instagram"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+          </svg>
+        </a>
+      </footer>
     </>
-  )
+  );
 }
