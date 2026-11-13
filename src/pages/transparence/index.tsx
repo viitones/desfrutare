@@ -140,6 +140,46 @@ export function Transparence() {
                   </a>
                   <a
                     className="cardT"
+                    href="/downloads/RESULTADO DO EDITAL 01.2025.pdf"
+                    download="RESULTADO DO EDITAL 01.2025.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar resultado edital" />
+                    <p>RESULTADO DO EDITAL 01.2025</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/RESULTADO DO EDITAL 01.2026.pdf"
+                    download="RESULTADO DO EDITAL 01.2026.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar resultado edital" />
+                    <p>RESULTADO DO EDITAL 01.2026</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/RESULTADO DO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.pdf"
+                    download="RESULTADO DO EDITAL 02_2026 PROJETO DESFRUTARE - MATERIAIS.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar resultado edital" />
+                    <p>RESULTADO DO EDITAL 02_2026 - MATERIAIS</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/RESULTADO_COTACAO_03_2026_ALIMENTACAO_PREMIACAO.pdf"
+                    download="RESULTADO_COTACAO_03_2026_ALIMENTACAO_PREMIACAO.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar resultado cotação" />
+                    <p>RESULTADO COTAÇÃO 03_2026 - ALIMENTAÇÃO PREMIAÇÃO</p>
+                  </a>
+                  <a
+                    className="cardT"
+                    href="/downloads/COTACAO_PREVIA_03_2026_ALIMENTACAO_PREMIACAO.pdf"
+                    download="COTACAO_PREVIA_03_2026_ALIMENTACAO_PREMIACAO.pdf"
+                  >
+                    <img src={iconPdf} alt="baixar COTACAO_PREVIA_03_2026_ALIMENTACAO_PREMIACAO" />
+                    <p>COTAÇÃO PRÉVIA 03_2026 - ALIMENTAÇÃO PREMIAÇÃO</p>
+                  </a>
+                  <a
+                    className="cardT"
                     href="/downloads/Planilha - Painel Discricionárias.xlsx"
                     download="Planilha - Painel Discricionárias.xlsx"
                   >
