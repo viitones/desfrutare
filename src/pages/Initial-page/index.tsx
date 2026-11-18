@@ -33,24 +33,32 @@ export function InitialPage() {
     const el = carouselRef.current;
     if (!el) return;
 
+    let halfWidth = 0;
+
     function step() {
       if (!isPaused.current && el) {
         el.scrollLeft += 1;
-        const half = el.scrollWidth / 2;
-        if (half > 0 && el.scrollLeft >= half) {
+        if (halfWidth > 0 && el.scrollLeft >= halfWidth) {
           el.scrollLeft = 0;
         }
       }
       rafRef.current = requestAnimationFrame(step);
     }
 
-    // Aguarda imagens carregarem para ter scrollWidth correto
-    const startDelay = setTimeout(() => {
+    function start() {
+      if (!el) return;
+      halfWidth = el.scrollWidth / 2;
       rafRef.current = requestAnimationFrame(step);
-    }, 300);
+    }
+
+    if (document.readyState === 'complete') {
+      start();
+    } else {
+      window.addEventListener('load', start, { once: true });
+    }
 
     return () => {
-      clearTimeout(startDelay);
+      window.removeEventListener('load', start);
       cancelAnimationFrame(rafRef.current);
     };
   }, []);
