@@ -29,6 +29,7 @@ import "./index.css";
 import ad1 from "../../assets/seletiva/inscricao_judo.jpeg";
 import ad2 from "../../assets/seletiva/seletiva_volei.jpeg";
 import ad3 from "../../assets/seletiva/seletiva_volei2.jpeg";
+import final from "../../assets/seletiva/final.jpeg";
 
 export function InitialPage() {
   return (
@@ -99,6 +100,9 @@ export function InitialPage() {
               <img src={ad1} alt="Anúncio 1" />
             </SwiperSlide>
             <SwiperSlide>
+              <img src={final} alt="final" />
+            </SwiperSlide>
+            <SwiperSlide>
               <img src={ad2} alt="Anúncio 2" />
             </SwiperSlide>
             <SwiperSlide>
@@ -108,13 +112,7 @@ export function InitialPage() {
               <img src={ad1} alt="Anúncio 1 - cópia" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={ad2} alt="Anúncio 2 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad3} alt="Anúncio 3 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad1} alt="Anúncio 1 - cópia" />
+              <img src={final} alt="final" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={ad2} alt="Anúncio 2 - cópia" />
@@ -124,6 +122,21 @@ export function InitialPage() {
             </SwiperSlide>
             <SwiperSlide>
               <img src={ad1} alt="Anúncio 1 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={final} alt="final" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad2} alt="Anúncio 2 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad3} alt="Anúncio 3 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={ad1} alt="Anúncio 1 - cópia" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={final} alt="final" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={ad2} alt="Anúncio 2 - cópia" />
