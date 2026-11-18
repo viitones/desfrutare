@@ -50,7 +50,7 @@
   flex-direction: column;
 }
 
-.mainInit > .ads-banner {
+.mainInit > .promo-banner {
   align-self: stretch;
 }
 
@@ -177,7 +177,7 @@
 }
 
 /* Ads banner */
-.ads-banner {
+.promo-banner {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 8rem;
@@ -185,7 +185,7 @@
   align-self: stretch;
 }
 
-.ads-carousel {
+.promo-carousel {
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -196,21 +196,21 @@
   user-select: none;
 }
 
-.ads-carousel::-webkit-scrollbar {
+.promo-carousel::-webkit-scrollbar {
   display: none;
 }
 
-.ads-carousel:active {
+.promo-carousel:active {
   cursor: grabbing;
 }
 
-.ads-track {
+.promo-track {
   display: flex;
   gap: 2rem;
   width: max-content;
 }
 
-.ads-slide {
+.promo-slide {
   width: 480px;
   height: 580px;
   flex-shrink: 0;
@@ -224,11 +224,11 @@
   transition: box-shadow 0.4s;
 }
 
-.ads-slide:hover {
+.promo-slide:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
-.ads-slide img {
+.promo-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -238,20 +238,20 @@
 }
 
 @media (max-width: 850px) {
-  .ads-slide {
+  .promo-slide {
     width: 320px;
     height: 450px;
   }
 }
 
 @media (max-width: 730px) {
-  .ads-banner {
+  .promo-banner {
     margin-bottom: 4rem;
   }
-  .ads-carousel {
+  .promo-carousel {
     padding-block: 2rem 4rem;
   }
-  .ads-slide {
+  .promo-slide {
     width: 280px;
     height: 400px;
   }

@@ -130,9 +130,9 @@ export function InitialPage() {
       </section>
 
       <main id="modalidade" className="container mainInit">
-        <section className="ads-banner">
+        <section className="promo-banner">
           <div
-            className="ads-carousel"
+            className="promo-carousel"
             ref={carouselRef}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -143,9 +143,9 @@ export function InitialPage() {
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
-            <div className="ads-track">
+            <div className="promo-track">
               {[...slides, ...slides].map((src, i) => (
-                <div className="ads-slide" key={i}>
+                <div className="promo-slide" key={i}>
                   <img src={src} alt={`Anúncio ${i + 1}`} draggable={false} />
                 </div>
               ))}
