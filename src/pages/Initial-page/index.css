@@ -50,6 +50,10 @@
   flex-direction: column;
 }
 
+.mainInit > .ads-banner {
+  align-self: stretch;
+}
+
 .mainInit h2 {
   color: black !important;
   font-weight: 500;
@@ -178,6 +182,7 @@
   max-width: 1200px;
   margin: 0 auto 8rem;
   padding: 0 1rem;
+  align-self: stretch;
 }
 
 .ads-carousel {
