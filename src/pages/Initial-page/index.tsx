@@ -36,15 +36,23 @@ export function InitialPage() {
     function step() {
       if (!isPaused.current && el) {
         el.scrollLeft += 1;
-        if (el.scrollLeft >= el.scrollWidth / 2) {
+        const half = el.scrollWidth / 2;
+        if (half > 0 && el.scrollLeft >= half) {
           el.scrollLeft = 0;
         }
       }
       rafRef.current = requestAnimationFrame(step);
     }
 
-    rafRef.current = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(rafRef.current);
+    // Aguarda imagens carregarem para ter scrollWidth correto
+    const startDelay = setTimeout(() => {
+      rafRef.current = requestAnimationFrame(step);
+    }, 300);
+
+    return () => {
+      clearTimeout(startDelay);
+      cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   function onMouseEnter() { isPaused.current = true; }
