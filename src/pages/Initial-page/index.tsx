@@ -1,7 +1,5 @@
 import { Header } from "../../components/Header";
 
-import "swiper/swiper-bundle.css";
-
 import judo from "../../assets/Judô.png";
 import volei from "../../assets/volei.png";
 
@@ -12,26 +10,60 @@ import { Localization } from "../../components/Localization";
 import AnimatedContent from "../../components/React-Bits/Animated-content";
 import SplitText from "../../components/React-Bits/Split-text";
 import Slider from "../../components/Slider";
-
-import {
-  A11y,
-  Autoplay,
-  EffectCoverflow,
-  Navigation,
-  Pagination,
-} from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/swiper-bundle.css";
+import { useRef, useState } from "react";
 
 import "./index.css";
 
 import ad1 from "../../assets/seletiva/inscricao_judo.jpeg";
 import ad2 from "../../assets/seletiva/seletiva_volei.jpeg";
 import ad3 from "../../assets/seletiva/seletiva_volei2.jpeg";
-import final from "../../assets/seletiva/final.jpeg";
+import finalImg from "../../assets/seletiva/final.jpeg";
+
+const slides = [ad1, finalImg, ad2, ad3, ad1, finalImg, ad2, ad3];
 
 export function InitialPage() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+  const [dragging, setDragging] = useState(false);
+
+  function onMouseDown(e: React.MouseEvent) {
+    isDragging.current = true;
+    setDragging(true);
+    startX.current = e.pageX - (trackRef.current?.offsetLeft ?? 0);
+    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+  }
+
+  function onMouseMove(e: React.MouseEvent) {
+    if (!isDragging.current || !trackRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - trackRef.current.offsetLeft;
+    const walk = x - startX.current;
+    trackRef.current.scrollLeft = scrollLeft.current - walk;
+  }
+
+  function onMouseUp() {
+    isDragging.current = false;
+    setDragging(false);
+  }
+
+  function onTouchStart(e: React.TouchEvent) {
+    isDragging.current = true;
+    startX.current = e.touches[0].pageX - (trackRef.current?.offsetLeft ?? 0);
+    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+  }
+
+  function onTouchMove(e: React.TouchEvent) {
+    if (!isDragging.current || !trackRef.current) return;
+    const x = e.touches[0].pageX - trackRef.current.offsetLeft;
+    const walk = x - startX.current;
+    trackRef.current.scrollLeft = scrollLeft.current - walk;
+  }
+
+  function onTouchEnd() {
+    isDragging.current = false;
+  }
   return (
     <>
       <Header />
@@ -63,94 +95,25 @@ export function InitialPage() {
 
       <main id="modalidade" className="container mainInit">
         <section className="ads-banner">
-          <Swiper
-            observer={true}
-            observeParents={true}
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={"auto"}
-            initialSlide={1}
-            loop={true}
-            loopAdditionalSlides={5}
-            coverflowEffect={{
-              rotate: 15,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
-            }}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              el: ".swiper-pagination",
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-            modules={[Autoplay, Pagination, Navigation, EffectCoverflow, A11y]}
-            className="myAdsSwiper"
+          <div
+            className={`ads-carousel${dragging ? " ads-carousel--dragging" : ""}`}
+            ref={trackRef}
+            onMouseDown={onMouseDown}
+            onMouseMove={onMouseMove}
+            onMouseUp={onMouseUp}
+            onMouseLeave={onMouseUp}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
           >
-            <SwiperSlide>
-              <img src={ad1} alt="Anúncio 1" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={final} alt="final" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad2} alt="Anúncio 2" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad3} alt="Anúncio 3" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad1} alt="Anúncio 1 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={final} alt="final" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad2} alt="Anúncio 2 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad3} alt="Anúncio 3 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad1} alt="Anúncio 1 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={final} alt="final" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad2} alt="Anúncio 2 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad3} alt="Anúncio 3 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad1} alt="Anúncio 1 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={final} alt="final" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad2} alt="Anúncio 2 - cópia" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ad3} alt="Anúncio 3 - cópia" />
-            </SwiperSlide>
-
-            <div className="slider-controler">
-              <div className="swiper-button-prev slide-arrow"></div>
-              <div className="swiper-button-next slide-arrow"></div>
-              <div className="swiper-pagination"></div>
+            <div className="ads-track">
+              {slides.map((src, i) => (
+                <div className="ads-slide" key={i}>
+                  <img src={src} alt={`Anúncio ${i + 1}`} draggable={false} />
+                </div>
+              ))}
             </div>
-          </Swiper>
+          </div>
         </section>
 
         <AnimatedContent
