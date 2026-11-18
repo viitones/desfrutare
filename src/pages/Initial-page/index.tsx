@@ -10,7 +10,7 @@ import { Localization } from "../../components/Localization";
 import AnimatedContent from "../../components/React-Bits/Animated-content";
 import SplitText from "../../components/React-Bits/Split-text";
 import Slider from "../../components/Slider";
-import { useRef, useState } from "react";
+import { useRef, useEffect } from "react";
 
 import "./index.css";
 
@@ -19,51 +19,71 @@ import ad2 from "../../assets/seletiva/seletiva_volei.jpeg";
 import ad3 from "../../assets/seletiva/seletiva_volei2.jpeg";
 import finalImg from "../../assets/seletiva/final.jpeg";
 
-const slides = [ad1, finalImg, ad2, ad3, ad1, finalImg, ad2, ad3];
+const slides = [ad1, finalImg, ad2, ad3];
 
 export function InitialPage() {
-  const trackRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const rafRef = useRef<number>(0);
+  const isPaused = useRef(false);
   const isDragging = useRef(false);
   const startX = useRef(0);
-  const scrollLeft = useRef(0);
-  const [dragging, setDragging] = useState(false);
+  const startScroll = useRef(0);
+
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+
+    function step() {
+      if (!isPaused.current && el) {
+        el.scrollLeft += 1;
+        if (el.scrollLeft >= el.scrollWidth / 2) {
+          el.scrollLeft = 0;
+        }
+      }
+      rafRef.current = requestAnimationFrame(step);
+    }
+
+    rafRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, []);
+
+  function onMouseEnter() { isPaused.current = true; }
+  function onMouseLeave() {
+    isPaused.current = false;
+    isDragging.current = false;
+  }
 
   function onMouseDown(e: React.MouseEvent) {
     isDragging.current = true;
-    setDragging(true);
-    startX.current = e.pageX - (trackRef.current?.offsetLeft ?? 0);
-    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+    startX.current = e.clientX;
+    startScroll.current = carouselRef.current?.scrollLeft ?? 0;
   }
 
   function onMouseMove(e: React.MouseEvent) {
-    if (!isDragging.current || !trackRef.current) return;
+    if (!isDragging.current || !carouselRef.current) return;
     e.preventDefault();
-    const x = e.pageX - trackRef.current.offsetLeft;
-    const walk = x - startX.current;
-    trackRef.current.scrollLeft = scrollLeft.current - walk;
+    carouselRef.current.scrollLeft = startScroll.current - (e.clientX - startX.current);
   }
 
-  function onMouseUp() {
-    isDragging.current = false;
-    setDragging(false);
-  }
+  function onMouseUp() { isDragging.current = false; }
 
   function onTouchStart(e: React.TouchEvent) {
+    isPaused.current = true;
     isDragging.current = true;
-    startX.current = e.touches[0].pageX - (trackRef.current?.offsetLeft ?? 0);
-    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+    startX.current = e.touches[0].clientX;
+    startScroll.current = carouselRef.current?.scrollLeft ?? 0;
   }
 
   function onTouchMove(e: React.TouchEvent) {
-    if (!isDragging.current || !trackRef.current) return;
-    const x = e.touches[0].pageX - trackRef.current.offsetLeft;
-    const walk = x - startX.current;
-    trackRef.current.scrollLeft = scrollLeft.current - walk;
+    if (!isDragging.current || !carouselRef.current) return;
+    carouselRef.current.scrollLeft = startScroll.current - (e.touches[0].clientX - startX.current);
   }
 
   function onTouchEnd() {
     isDragging.current = false;
+    isPaused.current = false;
   }
+
   return (
     <>
       <Header />
@@ -96,18 +116,19 @@ export function InitialPage() {
       <main id="modalidade" className="container mainInit">
         <section className="ads-banner">
           <div
-            className={`ads-carousel${dragging ? " ads-carousel--dragging" : ""}`}
-            ref={trackRef}
+            className="ads-carousel"
+            ref={carouselRef}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             onMouseDown={onMouseDown}
             onMouseMove={onMouseMove}
             onMouseUp={onMouseUp}
-            onMouseLeave={onMouseUp}
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
             <div className="ads-track">
-              {slides.map((src, i) => (
+              {[...slides, ...slides].map((src, i) => (
                 <div className="ads-slide" key={i}>
                   <img src={src} alt={`Anúncio ${i + 1}`} draggable={false} />
                 </div>

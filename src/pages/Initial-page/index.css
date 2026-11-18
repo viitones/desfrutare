@@ -178,7 +178,6 @@
   max-width: 1200px;
   margin: 0 auto 8rem;
   padding: 0 1rem;
-  overflow: hidden;
 }
 
 .ads-carousel {
@@ -186,43 +185,24 @@
   overflow-x: scroll;
   overflow-y: hidden;
   padding-block: 4rem 5rem;
-  position: relative;
   cursor: grab;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  user-select: none;
 }
 
 .ads-carousel::-webkit-scrollbar {
   display: none;
 }
 
-.ads-carousel--dragging {
+.ads-carousel:active {
   cursor: grabbing;
-}
-
-.ads-carousel--dragging .ads-track {
-  animation-play-state: paused;
 }
 
 .ads-track {
   display: flex;
   gap: 2rem;
   width: max-content;
-  animation: ads-scroll 18s linear infinite;
-  pointer-events: none;
-}
-
-.ads-carousel:hover .ads-track {
-  animation-play-state: paused;
-}
-
-@keyframes ads-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 .ads-slide {
@@ -236,11 +216,10 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s;
+  transition: box-shadow 0.4s;
 }
 
 .ads-slide:hover {
-  transform: scale(1.03);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
@@ -250,7 +229,7 @@
   height: 100%;
   object-fit: fill;
   object-position: center;
-  user-select: none;
+  pointer-events: none;
 }
 
 @media (max-width: 850px) {
